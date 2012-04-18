@@ -43,7 +43,7 @@
 \usepackage{color}
 % load the geometry package
 \usepackage[letterpaper,
-            left=1cm,right=1cm,
+            left=2cm,right=2cm,
             top=2cm,bottom=4cm]{geometry}         
 \title{Math 251: Problem Set I.}
 \author{Jason Krivo Flores}
@@ -52,7 +52,8 @@
 \maketitle{}
 %
 \begin{enumerate}
- \item Consider the piecewise defined function defined below:\\
+
+\item Consider the piecewise defined function defined below:\\
 \[
   f(x) = \left\{ 
   \begin{array}{l l}
@@ -71,9 +72,8 @@ There are several other interesting features to note: Although this function app
 \\
 \\As x approaches infinity $f (x) \to 0$ (figure 2.)\\
 %
-{\includegraphics[scale=0.5]{longview}}\\
+{\includegraphics[scale=0.45]{longview}}\\
 
-\pagebreak
 Examine the function below:\\
 \\
 \fbox{\includegraphics[scale=0.4]{loggy}}\\
@@ -107,11 +107,9 @@ View figure 2.3.\\
 Recall, a tangent line to a curve is a line that touches it at only one point and is its best straight line approximation. I have drawn color coded tangent lines at points { \color{green}{B}} and {\color{blue}{C}} on the graph 2.3.  Notice both lines lie between {\color{red} $y=x$} and thus have a slope $< 1$. The tangent line to point {\color{blue}{C}} most closely parallels the x axis and therefore is our second smallest quantity followed by the tangent line to { \color{green}{B}}. \\
 
 We can assess our final quantities with figure 2.3\\
-
 \fbox{\includegraphics[scale= 0.35]{slopey}}\\ 
   
 The tangent line to point A is the closest to the $y$ axis and our only quantity $ > 1$, as the line $\overleftrightarrow{AB}$ also falls between $y=x$ and the $x$ axis but is nearest to the line $y=x$. \\
-
 {\bfseries We now can arrange our quantities in increasing order: 0, TanC, TanB, $\overleftrightarrow{AB}$, 1, and TanA.}
  
 \end{enumerate}
@@ -122,9 +120,9 @@ The tangent line to point A is the closest to the $y$ axis and our only quantity
 \item The Figure below is known as Pascal's Triangle, it has many interesting and useful properties: \\
 The edges are all the number 1. The diagonals beginning with the second row from the top are the counting numbers 1,2,3,4 . . .  \\
  
-The horizontal rows are powers of 11( $ 11^0=1, 11^1= 11, 11^2=121, 11^3=1331$, etc.) and the whole array is left/right symmetric. \\ 
+The horizontal rows are powers of 11( $11^0=1$,  $11^1= 11$, $11^2=121$,  $11^3=1331$, etc.) and the whole array is left/right symmetric. \\ 
 
-The top row that is the single digit ``1'' is known as the ``zeroth'' row. The first row is 1,2, and so forth.
+The top row that is the single digit ``1'' is known as the ``zeroth'' row. The {\bfseries first} row begins the second line down from the top with the numbers 1,1.
 %
 \end{itemize}
 %
@@ -133,13 +131,15 @@ The top row that is the single digit ``1'' is known as the ``zeroth'' row. The f
 {\center Watch what happens when we expand the following expressions:}
  
 \begin{align*}
-  (a + b)^0 &= a + b\\
+  (a + b)^0 &= 1\\
+  (a + b)^1 &= a + b\\
   (a + b)^2 &= a^2 + 2ab + b^2\\
   (a + b)^3 &= a^3 + 3a^2b + 3ab^2 + b^3\\
   (a + b)^4 &= a^4 + 4a^3 b + 6a^2b^2 + 4ab^3 + b^4\\
   (a + b)^5 &= a^5 + 5a^4 b + 10a^3 b^2 + 10a^2 b^3 + 5ab^4+b^5
 \end{align*} 
  
-The horizontal rows of pascals triangle correspond to the coefficients of our binomial expansions. $(a+b)^0$ corresponding to the zeroth row has a coefficient of ``1''.  $(a+b)^2$`s coefficients are 1,2,1 the same as its expansion $ a^2+2ab+b^2$.
+The horizontal rows of pascals triangle correspond to the {\bfseries coefficients} of our binomial expansions. $(a+b)^0 = 1$ as {\bfseries any} term raised to the zeroth power simply $=1$. In  $(a+b)^1$ corresponding to the first row, the coefficients are both ones, with $(a+b)^2$ the coefficients are 1,2,1 the same as row 2 ($(1) a^2+(2) ab+(1) b^2$.)
+This means we can calculate the coefficients of any degree binomial expansion by simply referencing the corresponding row in Pascal's triangle, very cool!
   
 \end {document}
