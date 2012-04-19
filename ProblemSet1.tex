@@ -44,7 +44,7 @@
 % load the geometry package
 \usepackage[letterpaper,
             left=2cm,right=2cm,
-            top=2cm,bottom=4cm]{geometry}         
+            top=1.5cm,bottom=4cm]{geometry}         
 \title{Math 251: Problem Set I.}
 \author{Jason Krivo Flores}
 \date{\today} 
@@ -53,9 +53,9 @@
 %
 \begin{enumerate}
 
-\item Consider the piecewise defined function defined below:\\
+\item {\bfseries Consider the piecewise defined function defined below:}\\
 \[
-  f(x) = \left\{ 
+  f(\theta) = \left\{ 
   \begin{array}{l l}
     \frac{ sin(\theta)}{\theta}, \quad &  \theta \neq 0\\
     \\
@@ -63,18 +63,24 @@
   \end{array} \right. \\
 \]
 \\
-The domain of the function is $(-\infty, \infty)$
-$f(x)$ is sinusoidal and continuous for all values $\neq 0$.\\ When $\theta = 0$ The function exhibits a ``Jump'' discontinuity and returns a fixed value of $y = \frac{1}{2}$.\\
-A graph of this function (figure 1.) shows these properties. Notice also that as $x \to 0$ the $ \lim f(x) $ approaches 1.\\
-(We are not proving this result here but merely showing graphically its tendency)\\
-\\ \includegraphics[scale=0.5]{singraph}\\
-There are several other interesting features to note: Although this function approaches a general limit of 1 as $\theta_\to 0$ from both the left and the right, the actual value of $f(0) = \frac{1}{2}$.\\
+$f(\theta)$ Is sinusoidal and continuous for all values $\neq 0$ the domain  is $(-\infty, \infty)$.\\ When $\theta = 0$ The function exhibits a ``Jump'' discontinuity and returns a fixed value of $ \frac{1}{2}$.\\
+A graph of this function (figure 1.) shows these properties. Notice also that as $\theta \to 0$ the $ \lim f(x)$ approaches 1.
+(We are not proving this result here but merely showing  its tendency graphically)\\
+\vspace{2mm}
+
+Figure 1.
+\\ \fbox{\includegraphics[scale=0.4]{singraph}}\\
+
+Another interesting feature to note: although this function approaches a general limit of 1 as $\theta \to 0$ from both the left and the right, the actual value of $f(0) = \frac{1}{2}$.\\
 \\
-\\As x approaches infinity $f (x) \to 0$ (figure 2.)\\
+As x approaches infinity $f (\theta) \to 0$ (figure 2.)\\
 %
 {\includegraphics[scale=0.45]{longview}}\\
 
-Examine the function below:\\
+
+\vspace{8 mm}
+
+{\bfseries 2. Examine the function below:}\\
 \\
 \fbox{\includegraphics[scale=0.4]{loggy}}\\
 %
@@ -92,19 +98,19 @@ Examine the function below:\\
 \end{itemize}
 The function appears to be of the form$f(x)= \sqrt{x}$ but no explicit formula is given nor are the axes enumerated. The coordinates of the points (A,B, and C) have also been withheld.  \\
 
-Before we despair, let's take inventory of what we \emph have been given: The $x$ and$ y$ axes, and the line {\color{red}$y = x$} and that is all the information we need to derive our slopes. \\
+Before we despair, let's take inventory of what we \emph have been given: The $x$ and $ y$ axes, and the line {\color{red}$y = x$} which is all the information we need to derive our slopes. \\
 
-Recall the slope of a line is calculated by the change in $y$ of a line over the change in $x$ also known as, $\frac{\text \bfseries RISE}{\text \bfseries RUN}$.
-A line with the equation $y=x$ therefore has a slope of 1 as will any line parallel to it.\\ The x axis and lines parallel have a slope of zero. From this we can infer that lines which fall between the x axis and the line $y=x$ have slopes that are proper fractions (the line rises fewer than one unit per unit distance travelled the closer it gets to s slope of 0). Conversely, lines that fall between line $y=x$ and the $y$ axis are improper fractions that increase in slope the close they parallel the $y$ axis (though lines {\emph exactly} parallel to the $y$ axis have an undefined slope. \\
+Recall, the slope of a line is calculated by the change in $y$ of a line over the change in $x$ also known as, $\frac{\text \bfseries RISE}{\text \bfseries RUN}$.
+A line with the equation $y=x$ therefore has a slope of 1 as will any line parallel to it.\\ The x axis and lines parallel to it have a slope of zero. From this we can infer that lines which fall between the x axis and the line $y=x$ have slopes that are proper fractions (they rise fewer than one unit per unit of distance travelled.) Conversely, lines that fall between line $y=x$ and the $y$ axis are improper fractions that increase in slope the closer they parallel the $y$ axis (though lines {\emph exactly} parallel to the $y$ axis have an undefined slope. \\
 
-Now lets arrange our items in increasing order, first 0 is the smallest as we have no negative quantities, next we need to find the lines most closely parallel to the $x$ axis.
+Now lets arrange our items in increasing order. 0 is the smallest as we have no negative quantities, next we need to find the lines most closely parallel to the $x$ axis which will be slightly greater than 0 yet $< 1$.
 
 \pagebreak
 
 View figure 2.3.\\
 \fbox { \includegraphics [scale= 0.19] {AB} } \\ 
 
-Recall, a tangent line to a curve is a line that touches it at only one point and is its best straight line approximation. I have drawn color coded tangent lines at points { \color{green}{B}} and {\color{blue}{C}} on the graph 2.3.  Notice both lines lie between {\color{red} $y=x$} and thus have a slope $< 1$. The tangent line to point {\color{blue}{C}} most closely parallels the x axis and therefore is our second smallest quantity followed by the tangent line to { \color{green}{B}}. \\
+Recall, a tangent line to a curve is a line that touches it at only one point and is the curves best straight line approximation \emph{at that point}. I have drawn color coded tangent lines at points { \color{green}{B}} and {\color{blue}{C}} on the graph 2.3.  Both lines lie between {\color{red} $y=x$} and the $x$ axis and thus have a slope $< 1$. The tangent line to point {\color{blue}{C}} most closely parallels the x axis and therefore is our second smallest quantity followed by the tangent line to { \color{green}{B}}. \\
 
 We can assess our final quantities with figure 2.3\\
 \fbox{\includegraphics[scale= 0.35]{slopey}}\\ 
@@ -114,21 +120,18 @@ The tangent line to point A is the closest to the $y$ axis and our only quantity
  
 \end{enumerate}
 
-
-
+{\bfseries 3. a. The Figure below is known as Pascal's Triangle.} It has many interesting and useful properties,\\ a few of which are: \\
 \begin{itemize}
-\item The Figure below is known as Pascal's Triangle, it has many interesting and useful properties: \\
-The edges are all the number 1. The diagonals beginning with the second row from the top are the counting numbers 1,2,3,4 . . .  \\
- 
-The horizontal rows are powers of 11( $11^0=1$,  $11^1= 11$, $11^2=121$,  $11^3=1331$, etc.) and the whole array is left/right symmetric. \\ 
-
-The top row that is the single digit ``1'' is known as the ``zeroth'' row. The {\bfseries first} row begins the second line down from the top with the numbers 1,1.
+\item The edges are all the number 1. The diagonals beginning with the second row from the top are the counting numbers 1,2,3,4 . . .  \\
+\item If you look at the digits of the pyramid, the horizontal rows are powers of 11( $11^0=1$,  $11^1= 11$, $11^2=121$,  $11^3=1331$, etc.) and the whole array is left/right symmetric. \\ 
+\item The top row that is the single digit ``1'' is known as the ``zeroth'' row. The {\bfseries first} row begins the second line down from the top with the numbers 1, 1.
+and the the second row contains 1,2,1 and so forth, It is {\bfseries very important} that we number correctly, as we shall see.
 %
 \end{itemize}
 %
 \mkPascal{8} \\
 
-{\center Watch what happens when we expand the following expressions:}
+{\center {\bfseries b.} Watch what happens when we expand the following expressions:}
  
 \begin{align*}
   (a + b)^0 &= 1\\
@@ -138,17 +141,20 @@ The top row that is the single digit ``1'' is known as the ``zeroth'' row. The {
   (a + b)^4 &= a^4 + 4a^3 b + 6a^2b^2 + 4ab^3 + b^4\\
   (a + b)^5 &= a^5 + 5a^4 b + 10a^3 b^2 + 10a^2 b^3 + 5ab^4+b^5
 \end{align*} 
+
+\vspace{3mm}
  
-The horizontal rows of pascals triangle correspond to the {\bfseries coefficients} of our binomial expansions. $(a+b)^0 = 1$ as {\bfseries any} term raised to the zeroth power simply $=1$. In  $(a+b)^1$ corresponding to the first row, the coefficients are both ones, with $(a+b)^2$ the coefficients are 1,2,1 the same as row 2 ($(1) a^2+(2) ab+(1) b^2$.)
+{\bfseries c.} The horizontal rows of Pascals Triangle correspond to the {\bfseries coefficients} of our binomial expansions. If a binomial is raised ti the $nth$ power you can look at the $nth$ row of the triangle to find the coefficients of its expansion. Example: $(a+b)^0 = 1$ as {\bfseries any} term raised to the zeroth power simply $=1$. For $(a+b)^2$ the coefficients are 1,2,1 the same as row 2 so  $(a+b)^2$ = ($(1) a^2+(2) ab+(1) b^2$.)
 This means we can calculate the coefficients of any degree binomial expansion by simply referencing the corresponding row in Pascal's triangle, very cool! \\
 
 \pagebreak   
 
-\vspace{5 mm}
- \large {\bfseries The Quantity $(\frac{n}{k})$ Counts the Number of Ways to Select {\emph k} Items From a Set of {\emph n} Objects.}\\
+\vspace{8 mm}
+
+ {\bfseries d. The Quantity $(\frac{n}{k})$: The Number of Ways to Select {\emph k} Items From a Set of {\emph n} Objects.}\\
 %
-\vspace{4 mm}\\Say we have five Calculus gurus\textemdash Ann, Marisa, Amy, Kelly, and Steve whom we wish to arrange into pairs, our quantity $(\frac{n}{k})$ = $(\frac{5}{2}).$
-What is the maximum number of unique (k) pairs That five (n) students can be put into?\\
+\vspace{4 mm}\\Say we have five Calculus gurus\textemdash Ann, Marisa, Amy, Kelly, and Steve whom we wish to arrange into pairs. In that case our quantity  $(\frac{n}{k})$ would be $(\frac{5}{2}).$
+Let's see what the maximum number of unique (k) pairs that five (n) students can be put into.\\
 \vspace{3 mm}
 
 The formula to compute this is: 
@@ -158,14 +164,14 @@ The formula to compute this is:
 \]
 \vspace{3 mm}
 
-The ! is called factorial, and means the number before the ! is multiplied successively by all its predecessors back to the number one, hence $3! = 3 \cdot 2 \cdot 1 = 6$.
+The `` ! '' is called factorial and means the number before the ! is multiplied successively by all its predecessors back to the number one. Hence $3! = 3 \cdot 2 \cdot 1 = 6$.
 \\ If we expand our formula we get:
 \vspace{3 mm}
 \[
- \binom{5}{2}==\frac{5!}{2! \cdot 3!} =\frac{5 \cdot 4 \cdot 1}{(2 \cdot 1)(3 \cdot 2 \cdot 1}=\frac {120}{26} = 10
+ \binom{5}{2}=\frac{5!}{2! \cdot 3!} =\frac{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}{(2 \cdot 1)(3 \cdot 2 \cdot 1)}=\frac {120}{12} = 10
 \]
 \vspace{5 mm}
-\begin{center} Our calculus gurus can be paired up in 10 ways, which we can confirm:\\
+\begin{center} Our Calculus gurus can be paired up in 10 ways, which we can confirm:\\
 
 \vspace{5 mm}
  \quad Steve, Amy. \quad Steve, Ann. \quad Steve, Marisa. \quad Steve, Kelly.\\ 
@@ -180,32 +186,39 @@ The ! is called factorial, and means the number before the ! is multiplied succe
  
  \pagebreak
 
- \vspace{3 mm}
- {\center{{\large \bfseries The Binomial Theorem}}\\
- \vspace{3mm}  {\large is a formula for expanding binomials of the form $(a+b)^n$} \\ 
+  \vspace{3 mm}
+ {\center{{\large \bfseries e. The Binomial Theorem.}}\\
  
- \large If n is a positive integer, then:\\
+   \vspace{2 mm}
+ {\large A formula for expanding binomials of the form $(a+b)^n$}. \\ 
+ 
+ \vspace{3 mm}
+  
+ \large  If n is a positive integer then:\\
 \[
      (a+b)^n = \sum_{k=0}^n \binom{n}{k} a^{n-k} b^{k} \
 \]
 
-\vspace{2 mm} In the expression $\binom{n}{k}$ the upper index $n$ is the exponent of the binomial; the lower index $k$ indicates which term of the series.
+\vspace{2 mm} In the expression $\binom{n}{k}$ the upper index $n$, is the exponent of the binomial and the highest index of the series. The lower index $k$, indicates that the the series begins with $0$ and the $\sum$ means that you add all the terms indexed from 0 to $n$ together.
 \vspace{2 mm}
 For example: to expand  $(a + b)^5$  it will look like this:
 \[
-	\binom{5}{k}a^{5-k} \cdot b^k
+	\sum_{k=0}^5 \binom{5}{k} a^{5-k} \cdot b^{k}%\binom{5}{k}a^{5-k} \cdot b^k
 \]
-To calculate our variable expressions $5$ becomes the exponent of our first $a$ term and will count down from 5 to 0 each successive term, while the lower index $k$ becomes the exponent of $b$ and successively takes on ascending values of 0 through 5.\\
+
+To calculate our variable expressions $5$ becomes the exponent of our first $a$ term and will count down from 5 to 0 each successive term$(5 - k)$, while the lower index $k$ becomes the exponent of $b$ and successively takes on ascending values of 0 through 5.\\
+
 \vspace{2 mm}
-(Terms with an exponent of 0 are ``invisible'',  as anything raised to the 0 power is equal to 1.)
+
+(Terms with an exponent of 0 are ``invisible,'' as anything raised to the 0 power is equal to 1.)
 \[
-(a + b)^5 =\binom{5}{0} a^5(b^0)  +   \binom{4}{1}a^4b  +   \binom{3}{2}a^3b^2  +   \binom{2}{3}a^2b^3  +   \binom{1}{4}ab^4  +   \binom{0}{5}(a^0) b^5
+(a + b)^5 =\binom{5}{0} a^5(b^0)  +   \binom{4}{1}a^4b^1  +   \binom{3}{2}a^3b^2  +   \binom{2}{3}a^2b^3  +   \binom{1}{4}a^1 b^4  +   \binom{0}{5}(a^0) b^5
 \]
 Notice: The exponents of the $a$ and $b$ variables of each term of the series add up to 5; the original degree of our binomial.
 Now that we have the exponents of the variables, how do we calculate the coefficient for each of the terms in the series?\\
 \vspace{2 mm}
  You probably remember that we can use row five of Pascal's triangle (1, 5, 10, 10, 5, 1) and that is correct, but the answer is also right here in the theorem.\\
- we will use $\binom{n}{k}$ similar to how we derived all the unique pairings of five Calculus students.
+ we will use $\binom{n}{k}$ similar to how we derived all the unique pairings of five Calculus students in example d:
 	\[
  \binom{n}{k}=\frac{n!}{k!(n-k)!}
 	\]
@@ -213,19 +226,74 @@ Now that we have the exponents of the variables, how do we calculate the coeffic
 \[
 \binom{5}{0}, \binom{5}{1}, \binom{5}{2}, \binom{5}{3}, \binom{5}{4}, \binom {5}{5}
 \]
-\\vspace{2 mm}
 
-$\binom{n}{0}= 1$ and $\binom{n}{1}=n$ so the first, second and last coefficients are easy: $\binom{5}{0}$ and $\binom{5}{5} $ both equal 1 and $\binom{5}{1}$ equals 5.
-The next term $ \binom{5}{2}$ is identical to our Pairing of five students example.\\
+\vspace{2 mm}
+
+$\binom{n}{0}= 1$, $\binom{n}{1}=n$, and $\binom{n}{n}=1$ so the first, second and last coefficients are easy: $\binom{5}{0}$ and $\binom{5}{5} $ both equal 1 and $\binom{5}{1}$ equals 5.
+The next term $ \binom{5}{2}$ is identical to our Pairing of five students.\\
 \[
  \binom{5}{2}=\frac{5!}{2! \cdot 3!} =\frac{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}{(2 \cdot 1)(3 \cdot 2 \cdot 1)}=\frac {120}{26} = 10
 \]
-\vspace{2 mm}\\
-Continuing through the combinations we arrive at what we knew all along, the coefficients are identical to row five of Pascal's triangle. When we match them up with their corresponding variable expressions we calculated above our complete expansion is:\\
+\vspace{4 mm}\\ 
+
+Continuing through the combinations we arrive at what we knew all along, the coefficients are identical to row five of Pascal's triangle. When we match them up with their corresponding variable expressions our complete expansion is:\\
 	\[
 	  	\mathbf {a^5  +  5a^4 b  +  10a^3 b^2  +  10a^2 b^3  +  5a b^4  +  b^5}
 	\]
 	
-	Now we will use all of our above knowledge to find an expression for the difference quotient of the function $f(x)=x^6$.
+\vspace{4mm}	
 	
+{\bfseries f.} Now we will use all of our above knowledge to find an expression for the difference quotient of the function $f(x)=x^6$.\\
+
+\vspace{3 mm}	
+
+The difference quotient for $x^6$ is;
+
+	\[
+			\frac{(x + h)^6 +x^6}{h} \quad \text{ The binomial theorem tells us that:} 
+	\]
+\[
+     (x+h)^6\quad=\quad \sum_{k=0}^6 \binom{6}{k} x^{6-k} h^{k} \
+\]
+\vspace{2 mm}
+
+Which we may substitute into our difference quotient:\\
+
+\[
+          \frac{1}{h} \left\{ \left(\sum_{k=0}^6 \binom{6}{k} x^{6-k} h^{k}\right) - (x^6){}\right\}
+\]
+%
+%
+Expanding the binomial we achieve:
+
+\vspace{2 mm}
+
+ \[
+	\frac{1}{h} \cdot \left\{(x^6 + 6x^5 h + 15x^4 h^2 + 20x^3 h^3 + 15x^2h^4+ 6x h^5 + h^6) - (x^6)\right\}	
+\]
+
+\vspace{3 mm}
+
+The $ x^6$ terms cancel, we then factor an $h$ out of every term and cancel $\frac{1}{h}$.\\
+			
+\[
+	\cancel{\frac{1}{h}} \cdot \cancel{h}( 6x^5  + 15x^4 h + 20x^3 h^2 + 15x^2h^3+ 6x h^4 + h^5)
+\]
+
+$=6x^5  + 15x^4 h + 20x^3 h^2 + 15x^2h^3+ 6x h^4 + h^5$\\
+
+\vspace{7mm}
+
+{\bfseries Our difference quotient is complete and is: $\mathbf {6x^5  + 15x^4 h + 20x^3 h^2 + 15x^2h^3+ 6x h^4 + h^5}$}\\
+
+\vspace{8mm}
+
+To find the derivative we can take the limit as $h\to0$:
+	\[
+		\lim_{h \to 0} (6x^5  + 15x^4 h + 20x^3 h^2 + 15x^2h^3+ 6x h^4 + h^5)
+	\]
+	\[
+		\mathbf{= 6x^5}
+		\]
+				
  \end {document}
