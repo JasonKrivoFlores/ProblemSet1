@@ -140,6 +140,92 @@ The top row that is the single digit ``1'' is known as the ``zeroth'' row. The {
 \end{align*} 
  
 The horizontal rows of pascals triangle correspond to the {\bfseries coefficients} of our binomial expansions. $(a+b)^0 = 1$ as {\bfseries any} term raised to the zeroth power simply $=1$. In  $(a+b)^1$ corresponding to the first row, the coefficients are both ones, with $(a+b)^2$ the coefficients are 1,2,1 the same as row 2 ($(1) a^2+(2) ab+(1) b^2$.)
-This means we can calculate the coefficients of any degree binomial expansion by simply referencing the corresponding row in Pascal's triangle, very cool!
+This means we can calculate the coefficients of any degree binomial expansion by simply referencing the corresponding row in Pascal's triangle, very cool! \\
+
+\pagebreak   
+
+\vspace{5 mm}
+ \large {\bfseries The Quantity $(\frac{n}{k})$ Counts the Number of Ways to Select {\emph k} Items From a Set of {\emph n} Objects.}\\
+%
+\vspace{4 mm}\\Say we have five Calculus gurus\textemdash Ann, Marisa, Amy, Kelly, and Steve whom we wish to arrange into pairs, our quantity $(\frac{n}{k})$ = $(\frac{5}{2}).$
+What is the maximum number of unique (k) pairs That five (n) students can be put into?\\
+\vspace{3 mm}
+
+The formula to compute this is: 
+\vspace{3 mm}
+\[
+ \binom{n}{k}=\frac{n!}{k!(n-k)!} \quad \text {Which in this case is:}  \quad \binom{5}{2}=\frac{5!}{2!(5-2)!}
+\]
+\vspace{3 mm}
+
+The ! is called factorial, and means the number before the ! is multiplied successively by all its predecessors back to the number one, hence $3! = 3 \cdot 2 \cdot 1 = 6$.
+\\ If we expand our formula we get:
+\vspace{3 mm}
+\[
+ \binom{5}{2}==\frac{5!}{2! \cdot 3!} =\frac{5 \cdot 4 \cdot 1}{(2 \cdot 1)(3 \cdot 2 \cdot 1}=\frac {120}{26} = 10
+\]
+\vspace{5 mm}
+\begin{center} Our calculus gurus can be paired up in 10 ways, which we can confirm:\\
+
+\vspace{5 mm}
+ \quad Steve, Amy. \quad Steve, Ann. \quad Steve, Marisa. \quad Steve, Kelly.\\ 
+\vspace{2 mm}
+\quad Amy, Ann.\quad Amy, Marisa. \quad Amy, Kelly.\\
+\vspace{2 mm}
+\quad  Ann, Marisa. \quad Ann, Kelly \\
+\vspace{2 mm}
+ \quad  Marisa, Kelly.\\ 
   
-\end {document}
+ \end{center}
+ 
+ \pagebreak
+
+ \vspace{3 mm}
+ {\center{{\large \bfseries The Binomial Theorem}}\\
+ \vspace{3mm}  {\large is a formula for expanding binomials of the form $(a+b)^n$} \\ 
+ 
+ \large If n is a positive integer, then:\\
+\[
+     (a+b)^n = \sum_{k=0}^n \binom{n}{k} a^{n-k} b^{k} \
+\]
+
+\vspace{2 mm} In the expression $\binom{n}{k}$ the upper index $n$ is the exponent of the binomial; the lower index $k$ indicates which term of the series.
+\vspace{2 mm}
+For example: to expand  $(a + b)^5$  it will look like this:
+\[
+	\binom{5}{k}a^{5-k} \cdot b^k
+\]
+To calculate our variable expressions $5$ becomes the exponent of our first $a$ term and will count down from 5 to 0 each successive term, while the lower index $k$ becomes the exponent of $b$ and successively takes on ascending values of 0 through 5.\\
+\vspace{2 mm}
+(Terms with an exponent of 0 are ``invisible'',  as anything raised to the 0 power is equal to 1.)
+\[
+(a + b)^5 =\binom{5}{0} a^5(b^0)  +   \binom{4}{1}a^4b  +   \binom{3}{2}a^3b^2  +   \binom{2}{3}a^2b^3  +   \binom{1}{4}ab^4  +   \binom{0}{5}(a^0) b^5
+\]
+Notice: The exponents of the $a$ and $b$ variables of each term of the series add up to 5; the original degree of our binomial.
+Now that we have the exponents of the variables, how do we calculate the coefficient for each of the terms in the series?\\
+\vspace{2 mm}
+ You probably remember that we can use row five of Pascal's triangle (1, 5, 10, 10, 5, 1) and that is correct, but the answer is also right here in the theorem.\\
+ we will use $\binom{n}{k}$ similar to how we derived all the unique pairings of five Calculus students.
+	\[
+ \binom{n}{k}=\frac{n!}{k!(n-k)!}
+	\]
+\vspace{2 mm}As our index $k$ increases from 0 to 1 we obtain six different combinatorial possibilities: 
+\[
+\binom{5}{0}, \binom{5}{1}, \binom{5}{2}, \binom{5}{3}, \binom{5}{4}, \binom {5}{5}
+\]
+\\vspace{2 mm}
+
+$\binom{n}{0}= 1$ and $\binom{n}{1}=n$ so the first, second and last coefficients are easy: $\binom{5}{0}$ and $\binom{5}{5} $ both equal 1 and $\binom{5}{1}$ equals 5.
+The next term $ \binom{5}{2}$ is identical to our Pairing of five students example.\\
+\[
+ \binom{5}{2}=\frac{5!}{2! \cdot 3!} =\frac{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}{(2 \cdot 1)(3 \cdot 2 \cdot 1)}=\frac {120}{26} = 10
+\]
+\vspace{2 mm}\\
+Continuing through the combinations we arrive at what we knew all along, the coefficients are identical to row five of Pascal's triangle. When we match them up with their corresponding variable expressions we calculated above our complete expansion is:\\
+	\[
+	  	\mathbf {a^5  +  5a^4 b  +  10a^3 b^2  +  10a^2 b^3  +  5a b^4  +  b^5}
+	\]
+	
+	Now we will use all of our above knowledge to find an expression for the difference quotient of the function $f(x)=x^6$.
+	
+ \end {document}
